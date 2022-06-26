@@ -1,0 +1,181 @@
+/*Colour Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background-color: #121417;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#191d24), to(#252d37));
+  background: linear-gradient(bottom, #191d24, #252d37);
+  margin: 2em 2em;
+  padding: 1.5em;
+  width: 50%;
+  min-width: 300px;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  height: 340px;
+  border-radius: 1em;
+}
+
+.container .star-icon {
+  background-color: #2d3843;
+  padding: .8em;
+  border-radius: 50%;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.container h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.container p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #959eac;
+  line-height: 20px;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 2em 0em;
+  padding: 0;
+}
+
+.container ul li {
+  background-color: #252d37;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  line-height: 14px;
+  padding: 1em;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
+}
+
+.container ul li:hover {
+  background-color: #7c8798;
+  cursor: pointer;
+}
+
+.container ul li:active {
+  background-color: #fb7413;
+}
+
+.container button {
+  display: block;
+  background-color: #fb7413;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-style: none;
+  margin: .5em 0;
+  padding: 1em 0em;
+  border-radius: 2em;
+  width: 100%;
+  margin: auto;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.container button:hover {
+  background-color: white;
+  color: #fb7413;
+  cursor: pointer;
+}
+
+.thank-you {
+  display: none;
+  text-align: center;
+  opacity: 0.5;
+  -webkit-animation: fadeIn .25s ease-out forwards;
+          animation: fadeIn .25s ease-out forwards;
+}
+
+.thank-you .rating-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .5em 1em;
+  margin: auto;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  color: #fb7413;
+  background-color: #2d3843;
+}
+
+.thank-you h3 {
+  font-size: 24px;
+  margin-bottom: .5em;
+}
+
+.thank-you svg {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.hide {
+  display: none;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
