@@ -61,6 +61,7 @@
   <!--JavaScript Starts here-->
 <script>
 
+  var _rateId;
   function click_reply(rateId){
     _rateId = rateId;
     document.getElementById('rating').innerHTML = _rateId;
@@ -68,21 +69,23 @@
   }
 
 
-  let hdwd = document.querySelector('.how-did-we-do');
-  let thanks = document.getElementById('thank-you');
-  let btn = document.getElementById('submit-btn');
+  const hdwd = document.querySelector('.how-did-we-do');
+  const thanks = document.getElementById('thank-you');
+  const btn = document.getElementById('submit-btn');
 
   btn.addEventListener('click', ()=> {
-   if(_rateId==null){
-     alert('Hello');
+   if(_rateId!=null){
+     //alert('Hello');
     hdwd.classList.add('hide');
     thanks.style.display = 'block';
    }
 
    else{
-     console.log("rate us fess");
-      alert('Rate us fess boss');
+    if(_rateId==null){
+     console.log("Kindly rate us");
+      alert('Kindly pick a rating before submitting');
    }
+  }
     
   })
   
